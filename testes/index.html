@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita o envio do formulário para validação
+        
+        // Obtenha os valores dos campos
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value.trim();
+        const messageElement = document.getElementById('message');
+    
+        // Validação simples
+        if (name === '' || email === '' || password === '') {
+            messageElement.textContent = 'Todos os campos são obrigatórios.';
+            return;
+        }
+    
+        // Se os campos estiverem preenchidos, você pode prosseguir com o envio do formulário
+        // Aqui você pode adicionar a lógica para enviar os dados para um servidor
+    
+        // Exemplo de mensagem de sucesso
+        messageElement.textContent = 'Cadastro realizado com sucesso!';
+        messageElement.style.color = 'green';
+    });
+    
+    </script>
+    <style>
+        body {
+     background-image: url("imagem/fundo-roxo.jpg");   
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;    
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #401b85ad;
+    width: 300px;
+    color: #f5ba24;
+}
+
+h1 {
+    background-color: #B400F5;
+    color: #f5ba24; 
+    padding: 5px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #f5ba24;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #B400F5;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #B400F5;
+}
+
+#message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Usuário</h1>
+        <form id="signupForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button style="color: #f5ba24;" type="submit">Cadastrar</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <script src="script.js"></script>
+s
+</body>
+</html>
+

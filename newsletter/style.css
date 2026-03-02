@@ -50,9 +50,11 @@ main {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    color: black;
 }
 
+main a p{
+    color: black;
+}
 
 
 main a {
@@ -82,3 +84,4 @@ footer {
     border-radius: 8px;
 
 }
+

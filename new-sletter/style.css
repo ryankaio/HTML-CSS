@@ -1,0 +1,149 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #2b4141;
+    display: flex;
+    justify-content: center;
+    /* centraliza horizontal */
+    align-items: center;
+    /* centraliza vertical */
+    height: 100vh;
+
+}
+
+h1{
+    color: #2B4141;
+}
+.content {
+
+    border-radius: 10px;
+    background-color: #C8C2AE;
+    width: 470px;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 1px 1px 15px #0EB1D2;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+}
+
+img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 2px #34E4EA solid;
+}
+
+img:hover{
+    filter: drop-shadow(1px 1px 20px #34E4EA);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+ul {
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+main a p {
+    color: black;
+}
+
+
+
+main a {
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+main a:hover {
+    transform: translateX(10px);
+    background-image:linear-gradient(to right ,#34E4EA , #0EB1D2, #2B4141) ;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link-github i {
+    color: #333;
+}
+
+.link-github i:hover{
+    transform: scale(1.13);
+    transition: transform 0.3s ease;
+}
+
+.link-linkedin i {
+    color: #0077b5;
+}
+
+.link-linkedin i:hover{
+    transform: scale(1.13);
+    transition: transform 0.3s ease;
+}
+
+.link-instagram i {
+    color: #e1306c;
+}
+
+.link-instagram i:hover{
+    transform: scale(1.13);
+    transition: transform 0.3s ease;
+}
+
+.link-youtube i {
+    color: #ff0000;
+}
+
+.link-youtube i:hover{
+    transform: scale(1.13);
+    transition: transform 0.3s ease;
+}
+
+main a:hover {
+    background-color: #34E4EA;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image:linear-gradient(to bottom, #8AB9B5 , #0EB1D2);
+    padding: 15px;
+    border-radius: 8px;
+    
+}
+
+footer:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
